@@ -1,0 +1,20 @@
+1. Create the project for the Framework.
+
+2. If we have an existing project where we installed all the needed plugins
+pip freeze : This will give you the list of installed plugins. Copy to a text file.
+Navigate to the new project root and paste there as with name like 'requirements.txt'. Then use the command pip install -r requirements.txt
+
+Note: If we don't have any existing project internet/Chatgpt can give yiu the list of plugins
+which you can install using pip install plugin-name with spaces.
+
+3. Create the folder structure, mainly the pages, tests and utils as different packages.
+pytest.ini , conftest.py files, testdata as a separate directory.
+
+4. We should start creating the page class, where we hold all element locators inside the
+constructor so that when the object of the class created in the test, all these elements automatically declared.
+Also start creating the action methods against the locators.
+
+5. Create Test data using Json file in dictionary format.
+
+6. Under the utils package, create a .py file 'general_testdata_reader.py', and read the json file and store in some variable.
+This can be used in many test cases.
