@@ -18,3 +18,12 @@ Also start creating the action methods against the locators.
 
 6. Under the utils package, create a .py file 'general_testdata_reader.py', and read the json file and store in some variable.
 This can be used in many test cases.
+
+7. Create a .pyest.ini file with the required commands, basically headed mode and the browser type.
+
+8. create conftest.py , we can place all our reusable fixtures here. Copy-pasted some methods for maximizing the browser. Then created a fixture named 'page'. In that fixture specifying playwright default page fixture which can open a browser-new context and new tab.
+Then specify the URL using go to method. Make sure you import the test data reader.py where we created the function for accessing the json file.Then access the URL using the dictionary concept.
+Yield the page and that page will go to the test. While using page fixture, page.close is not needed after the yield because the page fixture automatically does the cleanup.
+
+9. Create the test cases now with 'test_test case name'. Mention the pre-condition fixture name as parameter. then create the object of the page class and pass the page as the parameter since the constructor in the page class has page parameter value,
+so while creating the object it expects the same. Now that page means, the yield page which is nothing but the bowser with the opened URL. Then do the rest of the validation.
