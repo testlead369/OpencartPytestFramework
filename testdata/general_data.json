@@ -5,6 +5,14 @@
   "credentials": {
     "username": "Test",
     "password": "Test"
+  },
+  "phone_number": {
+    "phone_number_display": "123456789"
+  },
+
+  "credentials_valid": {
+    "username": "connectkiran18@gmail.com",
+    "password": "Test@123"
   }
 
 }
