@@ -13,6 +13,48 @@
   "credentials_valid": {
     "username": "connectkiran18@gmail.com",
     "password": "Test@123"
+  },
+
+  "credentials_invalid": {
+    "username": "connectkiran19@gmail.com",
+    "password": "Test123"
+  },
+
+  "Login_sidebar":
+  {
+    "data": ["Login", "Register", "Forgotten Password", "My Account", "Address Book", "Wish List", "Order History", "Downloads", "Recurring payments", "Reward Points", "Returns", "Transactions", "Newsletter"]
+  },
+
+  "sort_by": {
+    "sort_options":[
+    "Default",
+    "Name (A - Z)",
+    "Name (Z - A)",
+    "Price (Low > High)",
+    "Price (High > Low)",
+    "Rating (Highest)",
+    "Rating (Lowest)",
+    "Model (A - Z)",
+    "Model (Z - A)"
+]
+
+  },
+
+  "listed products": {
+    "listed_products_sorted":[
+    "Apple Cinema 30\"",
+    "Canon EOS 5D",
+    "HP LP3065",
+    "HTC Touch HD",
+    "iPhone",
+    "iPod Classic",
+    "MacBook",
+    "MacBook Air",
+    "Palm Treo Pro",
+    "Product 8",
+    "Samsung SyncMaster 941BW",
+    "Sony VAIO"
+]
   }
 
 }
