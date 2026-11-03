@@ -12,6 +12,9 @@ class HomePage:
         self.phone_number=page.get_by_text("123456789")
         self.my_account=page.get_by_text("My Account").nth(0)
         self.login_link=page.get_by_role("link", name="Login")
+        self.desktop_mouse_hover=page.get_by_role("link", name="Desktops")
+        self.page.show_all_desktops=page.get_by_role("link", name="Show All Desktops")
+
 
 
     def check_logo(self):
@@ -39,3 +42,7 @@ class HomePage:
 
     def login_link_click(self):
         self.login_link.click()
+
+    def desktop_mouse_hover_click(self):
+        self.desktop_mouse_hover.hover()
+        self.page.show_all_desktops.click()

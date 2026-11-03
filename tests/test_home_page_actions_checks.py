@@ -28,7 +28,17 @@ def test_login_link_click(page):
     obj_home_page = HomePage(page)
     obj_home_page.my_account_click()
     obj_home_page.login_link_click()
-    page.wait_for_timeout(2000)  # Wait for 2 seconds to allow the page to load
+
+def test_desktop_mouse_hover(page):
+    obj_home_page = HomePage(page)
+    obj_home_page.desktop_mouse_hover_click()
+    page.wait_for_timeout(3000)
+
+def test_collect_dropdown_values(page):
+    obj_home_page = HomePage(page)
+    obj_home_page.desktop_mouse_hover_click()
+    print(obj_home_page.get_sortby_dropdown_values())
+
 
 
 
